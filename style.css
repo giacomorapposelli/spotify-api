@@ -1,0 +1,113 @@
+* {
+    font-family: "ABeeZee", sans-serif;
+    color: rgb(88, 201, 88);
+}
+
+body {
+    margin: 0;
+    background-color: rgb(31, 31, 31);
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-size: 70px;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid rgb(88, 201, 88);
+    background-color: rgb(31, 31, 31);
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+    margin-left: 100px;
+    outline: none;
+}
+
+input:focus {
+    border-bottom: 3px solid rgb(88, 201, 88);
+}
+
+select {
+    width: 100px;
+    height: 30px;
+    margin-left: 50px;
+    background-color: rgb(31, 31, 31);
+    font-size: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#submit-btn,
+#more {
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    margin-left: 50px;
+    border: 2px solid rgb(88, 201, 88);
+    border-radius: 10px;
+    background-color: rgb(31, 31, 31);
+    outline: none;
+    cursor: pointer;
+}
+
+#more {
+    margin: 40px 50px 20px 0;
+    float: right;
+    display: none;
+}
+
+.search-field {
+    margin-top: 80px;
+}
+
+#results-info {
+    margin: 45px 0 60px 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+img {
+    min-height: 250px;
+    max-height: 250px;
+    min-width: 250px;
+    margin-top: 50px;
+}
+
+img:hover {
+    box-shadow: 0 0 12px #a5a5a5;
+}
+
+.artist-container {
+    min-height: 250px;
+    max-height: 250px;
+    max-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    text-align: center;
+    font-size: 15px;
+    max-width: 250px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#results-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 100px;
+    margin-left: 85px;
+}
+
+.results-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
