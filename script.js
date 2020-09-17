@@ -83,6 +83,9 @@
             if (spotifyData[i].images.length > 0) {
                 imgUrl = spotifyData[i].images[0].url;
             }
+            if (spotifyData[i].name.length > 15) {
+                spotifyData[i].name = spotifyData[i].name.slice(0, 15) + "...";
+            }
 
             html +=
                 '<div class="artist-container"><a href="' +
